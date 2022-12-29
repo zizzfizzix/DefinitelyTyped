@@ -17,13 +17,13 @@ declare namespace GoogleAppsScript {
      * UrlFetchApp
      */
     interface HTTPResponse {
-      getAllHeaders(): object;
+      getAllHeaders(): HttpHeaders;
       getAs(contentType: string): Base.Blob;
       getBlob(): Base.Blob;
       getContent(): Byte[];
       getContentText(): string;
       getContentText(charset: string): string;
-      getHeaders(): object;
+      getHeaders(): HttpHeaders;
       getResponseCode(): Integer;
     }
     interface URLFetchRequest extends URLFetchRequestOptions {
